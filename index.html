@@ -5,39 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body {background: #fafafa; font-size: 15px; font-family: 'Poppins', sans-serif;}
+    header {width: 524px; margin: 89px auto 60px auto; display: block; text-align: center;}
+
+    .head-top, .head-middle, article { margin: 0;}
+    .head-top {font-weight: 200; font-size: 2.5em; margin-bottom: 26px;}
+    .head-middle {font-weight: 800; font-size: 2.5em; margin-bottom: 33;}
+    article {font-weight: 200; font-size: 1em; margin-bottom: 65px;}
+
+    main {width: 1124px; height: 562px; margin: 0px auto 20px auto; text-align: center;}
+    .box {width: 289px; height: 189px; border-radius: 15px; padding: 28px; border: 1px solid #d3d3d3; box-shadow: 0px 5px 10px 2px #ddd; display: inline-block; margin: 8px; text-align: left;}
+    .b-sup {border-top: 4px solid #49d0cf; position: relative; top: 140px;}
+    .b-team {border-top: 4px solid #ea5453;}
+    .b-karma {border-top: 4px solid #f8ae4f;}
+    .b-calc {border-top: 4px solid #569bec; position: relative; top: 140px;}
+
+
+    .h-sup, .h-team, .h-karma, .h-calc {font-weight: 800; font-size: 1.2em;}
+    .h-sup-desc, .h-team-desc, .h-karma-desc, .h-calc-desc {font-weight: 200; font-size: 0.8em;}
+
+    img {margin-top: 44px; float: right;}
+
+    footer {display: block;}
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    @media screen and (max-width: 375px){
+      header {width: 278px; margin-top: 89px;}
+      .head-top, .head-middle, article { margin: 0;}
+      .head-top, .head-middle { font-size: 1.5em;}
+      article { font-size: 0.9em; text-align: justify; }
+      main {width: auto; height: auto; display:flex; flex-direction: column; align-items: center;}  
+      .box {width: 220px; display: block;}
+      .b-sup, .b-team, .b-karma, .b-calc {position:unset;}
+    }
+
   </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+  <header>
+    <p class="head-top">Reliable, efficient delivery</p>
+    <h1 class="head-middle">Powered by Technology</h1>
+    <article>
+      Our Artificial Intelligence powered tools use millions of project data points 
+      to ensure that your project is successful
+    </article>
+  </header>
+  <main>
+    <div class="box b-sup">
+      <p class="h-sup">Supervisor</p>
+      <div class="h-sup-desc">
+        Monitors activity to identify project roadblocks
+      </div>
+      <img src="./images/icon-supervisor.svg" alt="icon-supervisor">
+    </div>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+    <div class="box b-team">
+      <p class="h-team">Team Builder</p>
+      <div class="h-team-desc">
+        Scans our talent network to create the optimal team for your project
+      </div>
+      <img src="./images/icon-team-builder.svg" alt="icon-team-builder">
+    </div>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+    <div class="box b-calc">
+      <p class="h-calc">Calculator</p>
+      <div class="h-calc-desc">
+        Uses data from past projects to provide better delivery estimates
+      </div>
+      <img src="./images/icon-calculator.svg" alt="icon-calculator">
+    </div>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
+    <div class="box b-karma">
+      <p class="h-karma">Karma</p>
+      <div class="h-karma-desc">
+        Regularly evaluates our talent to ensure quality
+      </div>
+      <img src="./images/icon-karma.svg" alt="icon-karma">
+    </div>
+  </main>
   
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Kittiphat Pisuittporn</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
